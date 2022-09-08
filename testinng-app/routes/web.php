@@ -15,3 +15,5 @@ use App\Http\Controllers\CryptoBroController;
 */
 
 Route::get('/', [CryptoBroController::class, 'getData']);
+
+Route::get('/detailview', [CryptoBroController::class, 'getDetailledInfo'])->name('detailview');
